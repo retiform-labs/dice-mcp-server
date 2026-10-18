@@ -1,5 +1,5 @@
 {
-  "name": "@sagelabs/dice-mcp-server",
+  "name": "@retiform/dice-mcp-server",
   "version": "1.4.1",
   "description": "Stateless dice engine MCP tool server - generic d20-style notation, L5R 4e Roll & Keep, and L5R 5e ring/skill symbol dice, via the Model Context Protocol.",
   "type": "module",
@@ -61,12 +61,12 @@
   "author": {
     "name": "David Newman & Guan",
     "email": "david.r.newman@proton.me",
-    "url": "https://github.com/sagelabs-dev"
+    "url": "https://github.com/retiform-labs"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sagelabs-dev/dice-mcp-server.git"
+    "url": "git+https://github.com/retiform-labs/dice-mcp-server.git"
   },
   "bin": {
     "dice-mcp-server": "./bin/dice-mcp-server.mjs"
