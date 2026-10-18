@@ -1,4 +1,4 @@
-# @sagelabs/dice-mcp-server
+# @retiform/dice-mcp-server
 
 Stateless dice engine MCP tool server. Pure dice math — no character sheets, no sessions, no persistence.
 
@@ -10,7 +10,7 @@ Three tools via the Model Context Protocol:
 | `l5r4_roll` | Legend of the Five Rings 4e Roll & Keep (XkY+Z)          | structured in, number + raises out |
 | `l5r5_roll` | Legend of the Five Rings 5e (FFG) ring/skill symbol dice | structured in, symbols out         |
 
-Built on [@sagelabs/mcp-ai](https://github.com/sagelabs-dev/mcp-ai) SimpleServer (HTTP transport, raw zod-shape schemas). Same composition-root pattern as `@sagelabs/matrix-mcp-server`.
+Built on [@retiform/mcp-ai](https://github.com/retiform-labs/mcp-ai) SimpleServer (HTTP transport, raw zod-shape schemas). Same composition-root pattern as `@retiform/matrix-mcp-server`.
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ Built on [@sagelabs/mcp-ai](https://github.com/sagelabs-dev/mcp-ai) SimpleServer
   "mcpServers": {
     "dice": {
       "command": "npx",
-      "args": ["-y", "@sagelabs/dice-mcp-server"]
+      "args": ["-y", "@retiform/dice-mcp-server"]
     }
   }
 }
@@ -401,7 +401,7 @@ If dice-mcp-server is useful to you, consider supporting its continued developme
 
 - **Genesys / Star Wars dice** — new symbol tables (data), same engine.
 - ~~**mcp-ai upstream**: server-side bind-host support for express
-  `listen()`~~ — DONE upstream in @sagelabs/mcp-ai 1.6.7-guan.0
+  `listen()`~~ — DONE upstream in @retiform/mcp-ai 1.6.7-guan.0
   (consumed here via the dependency bump); systemd loopback enforcement
   retained as defense-in-depth.
 - **Fate / other systems** — candidate engines behind the same tool
@@ -413,4 +413,4 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-Crafted with ❤️ by [Sage Labs](https://sagelabs.dev)
+Crafted with ❤️ by [Retiform Labs](https://retiform.dev)
