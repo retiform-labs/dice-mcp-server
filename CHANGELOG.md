@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.4] — 2026-10-28
+
+### Changed
+- Dependency migration: `@sagelabs/mcp-ai` -> `@retiform/mcp-ai` `^1.9.1`.
+  The `@sagelabs` scope is deprecated on npm. Import path
+  (`@retiform/mcp-ai/simple-server/index.js`) and the SimpleServer config
+  contract are unchanged across the version gap.
+
+### Fixed
+- `bin/dice-mcp-server.mjs`: the MCP client config in the header comment
+  instructed `npx -y @sagelabs/dice-mcp-server`, a **deprecated** package.
+  It now names `@retiform/dice-mcp-server`. That line ships inside the
+  published tarball, so it was reaching users directly.
+- `FUNDING.yml`: sponsor URL and header comment pointed at the retired
+  `sagelabs-dev` GitHub org (404). Now `retiform-labs`.
+
 ## [1.4.1] — 2026-09-13
 
 ### Changed: `host` config now binds the interface (mcp-ai 1.6.7)
